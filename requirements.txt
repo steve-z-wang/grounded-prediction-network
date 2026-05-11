@@ -1,0 +1,16 @@
+jax[cuda12]
+flax
+optax
+numpy
+tqdm
+pytest
+datasets
+transformers
+huggingface_hub
+
+# Torch baselines (Transformer++, GDN)
+torch
+flash-linear-attention
+einops
+accelerated-scan
+ninja

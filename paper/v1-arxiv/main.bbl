@@ -1,0 +1,130 @@
+\begin{thebibliography}{19}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Beck et~al.(2024)Beck, P{\"o}ppel, Spanring, Auer, Prudnikova, Kopp,
+  Klambauer, Brandstetter, and Hochreiter]{beck2024xlstm}
+Maximilian Beck, Korbinian P{\"o}ppel, Markus Spanring, Andreas Auer,
+  Oleksandra Prudnikova, Michael Kopp, G{\"u}nter Klambauer, Johannes
+  Brandstetter, and Sepp Hochreiter.
+\newblock x{LSTM}: Extended long short-term memory.
+\newblock \emph{arXiv preprint arXiv:2405.04517}, 2024.
+
+\bibitem[Behrouz et~al.(2025{\natexlab{a}})Behrouz, Zhong, and
+  Mirrokni]{behrouz2025titans}
+Ali Behrouz, Peilin Zhong, and Vahab Mirrokni.
+\newblock Titans: Learning to memorize at test time.
+\newblock \emph{arXiv preprint arXiv:2501.00663}, 2025{\natexlab{a}}.
+
+\bibitem[Behrouz et~al.(2025{\natexlab{b}})]{behrouz2025nested}
+Ali Behrouz et~al.
+\newblock Nested learning: The illusion of deep learning architectures.
+\newblock \emph{arXiv preprint arXiv:2512.24695}, 2025{\natexlab{b}}.
+
+\bibitem[Dao and Gu(2024)]{dao2024transformers}
+Tri Dao and Albert Gu.
+\newblock Transformers are ssms: Generalized models and efficient algorithms
+  through structured state space duality.
+\newblock \emph{arXiv preprint arXiv:2405.21060}, 2024.
+
+\bibitem[De et~al.(2024)De, Smith, Fernando, Botev, Cristian-Muraru, Gu,
+  Haroun, Berrada, Chen, Srinivasan, et~al.]{de2024griffin}
+Soham De, Samuel~L. Smith, Anushan Fernando, Aleksandar Botev, George
+  Cristian-Muraru, Albert Gu, Ruba Haroun, Leonard Berrada, Yutian Chen,
+  Srivatsan Srinivasan, et~al.
+\newblock Griffin: Mixing gated linear recurrences with local attention for
+  efficient language models.
+\newblock \emph{arXiv preprint arXiv:2402.19427}, 2024.
+
+\bibitem[Dong et~al.(2024)Dong, Fu, Diao, Byeon, Chen, Mahabaleshwarkar, Liu,
+  Van~Keirsbilck, Chen, Suhara, et~al.]{dong2024hymba}
+Xin Dong, Yonggan Fu, Shizhe Diao, Wonmin Byeon, Zijia Chen, Ameya~S.
+  Mahabaleshwarkar, Shih-Yang Liu, Matthijs Van~Keirsbilck, Min-Hung Chen,
+  Yoshi Suhara, et~al.
+\newblock Hymba: A hybrid-head architecture for small language models.
+\newblock \emph{arXiv preprint arXiv:2411.13676}, 2024.
+
+\bibitem[Friston(2010)]{friston2010free}
+Karl Friston.
+\newblock The free-energy principle: a unified brain theory?
+\newblock \emph{Nature reviews neuroscience}, 11\penalty0 (2):\penalty0
+  127--138, 2010.
+
+\bibitem[Gu and Dao(2023)]{gu2023mamba}
+Albert Gu and Tri Dao.
+\newblock Mamba: Linear-time sequence modeling with selective state spaces.
+\newblock \emph{arXiv preprint arXiv:2312.00752}, 2023.
+
+\bibitem[Gu et~al.(2021)Gu, Goel, and R{\'e}]{gu2021efficiently}
+Albert Gu, Karan Goel, and Christopher R{\'e}.
+\newblock Efficiently modeling long sequences with structured state spaces.
+\newblock \emph{arXiv preprint arXiv:2111.00396}, 2021.
+
+\bibitem[Hochreiter and Schmidhuber(1997)]{hochreiter1997long}
+Sepp Hochreiter and J{\"u}rgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock \emph{Neural computation}, 9\penalty0 (8):\penalty0 1735--1780, 1997.
+
+\bibitem[Katharopoulos et~al.(2020)Katharopoulos, Vyas, Pappas, and
+  Fleuret]{katharopoulos2020transformers}
+Angelos Katharopoulos, Apoorv Vyas, Nikolaos Pappas, and Fran{\c{c}}ois
+  Fleuret.
+\newblock Transformers are {RNN}s: Fast autoregressive transformers with linear
+  attention.
+\newblock 2020.
+
+\bibitem[Munkhdalai et~al.(2024)Munkhdalai, Faruqui, and
+  Gopal]{munkhdalai2024infini}
+Tsendsuren Munkhdalai, Manaal Faruqui, and Siddharth Gopal.
+\newblock Leave no context behind: Efficient infinite context transformers with
+  infini-attention.
+\newblock \emph{arXiv preprint arXiv:2404.07143}, 2024.
+
+\bibitem[Peng et~al.(2025)]{peng2025rwkv7}
+Bo~Peng et~al.
+\newblock {RWKV-7} "goose" with expressive dynamic state evolution.
+\newblock \emph{arXiv preprint arXiv:2503.14456}, 2025.
+
+\bibitem[Rao and Ballard(1999)]{rao1999predictive}
+Rajesh~PN Rao and Dana~H Ballard.
+\newblock Predictive coding in the visual cortex: a functional interpretation
+  of some extra-classical receptive-field effects.
+\newblock \emph{Nature neuroscience}, 2\penalty0 (1):\penalty0 79--87, 1999.
+
+\bibitem[Schlag et~al.(2021)Schlag, Irie, and Schmidhuber]{schlag2021linear}
+Imanol Schlag, Kazuki Irie, and J{\"u}rgen Schmidhuber.
+\newblock Linear transformers are secretly fast weight programmers.
+\newblock \emph{arXiv preprint arXiv:2102.11174}, 2021.
+
+\bibitem[Sun et~al.(2024)Sun, Li, Dalal, Xu, Vikram, Zhang, Dubois, Chen, Wang,
+  Koyejo, Hashimoto, and Guestrin]{sun2024ttt}
+Yu~Sun, Xinhao Li, Karan Dalal, Jiarui Xu, Arjun Vikram, Genghan Zhang, Yann
+  Dubois, Xinlei Chen, Xiaolong Wang, Sanmi Koyejo, Tatsunori Hashimoto, and
+  Carlos Guestrin.
+\newblock Learning to (learn at test time): {RNN}s with expressive hidden
+  states.
+\newblock \emph{arXiv preprint arXiv:2407.04620}, 2024.
+
+\bibitem[Yang et~al.(2023)Yang, Wang, Shen, Panda, and
+  Kim]{yang2023gatedlinear}
+Songlin Yang, Bailin Wang, Yikang Shen, Rameswar Panda, and Yoon Kim.
+\newblock Gated linear attention transformers with hardware-efficient training.
+\newblock \emph{arXiv preprint arXiv:2312.06635}, 2023.
+
+\bibitem[Yang et~al.(2024{\natexlab{a}})Yang, Kautz, and
+  Hatamizadeh]{yang2024gated}
+Songlin Yang, Jan Kautz, and Ali Hatamizadeh.
+\newblock Gated delta networks: Improving mamba2 with delta rule.
+\newblock \emph{arXiv preprint arXiv:2412.06464}, 2024{\natexlab{a}}.
+
+\bibitem[Yang et~al.(2024{\natexlab{b}})Yang, Wang, Zhang, Shen, and
+  Kim]{yang2024parallelizing}
+Songlin Yang, Bailin Wang, Yu~Zhang, Yikang Shen, and Yoon Kim.
+\newblock Parallelizing linear transformers with the delta rule over sequence
+  length.
+\newblock \emph{arXiv preprint arXiv:2406.06484}, 2024{\natexlab{b}}.
+
+\end{thebibliography}

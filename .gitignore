@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Environments
+venv/
+.venv/
+env/
+
+# Tooling caches
+.pytest_cache/
+.cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS
+.DS_Store
+
+# Data / artifacts (not committed)
+/data/
+checkpoints/
+runs/
+wandb/
+*.bin
+*.pt
+
+# LaTeX intermediates (keep .tex, .pdf, .bbl)
+*.aux
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
