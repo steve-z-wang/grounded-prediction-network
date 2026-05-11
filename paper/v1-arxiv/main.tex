@@ -34,15 +34,15 @@
 \begin{abstract}
 Modern language models scale depth by stacking layers, each holding
 its own state --- a per-layer KV cache in transformers, a per-layer
-matrix in Mamba, GDN, RWKV, and xLSTM. Biological systems lean
-heavily on recurrence rather than on stacking. We ask how far that
-shape can go on language modeling. We propose Grounded Prediction
-Networks (GPN): one state vector revisited at every step through a
-single recurrent block --- one FFN, one shared matrix memory. At
-130M parameters, a 1-layer GPN+M reaches FineWeb-Edu perplexity
-$18.06$, within $13\%$ of a 12-layer Transformer++ ($16.05$) and
-$18\%$ of a 10-layer Gated DeltaNet (GDN, $15.34$); a 2-layer
-variant closes the gap to $6\%/11\%$. We do not match the deep
+matrix in Mamba, Gated DeltaNet (GDN), RWKV, and xLSTM. Biological
+systems lean heavily on recurrence rather than on stacking. We ask
+how far that shape can go on language modeling. We propose Grounded
+Prediction Networks (GPN): one state vector revisited at every step
+through a single recurrent block --- one FFN, one shared matrix
+memory. At 130M parameters, a 1-layer GPN+M reaches FineWeb-Edu
+perplexity $18.06$, within $13\%$ of a 12-layer Transformer++
+($16.05$) and $18\%$ of a 10-layer GDN ($15.34$); a 2-layer variant
+closes the gap to $6\%/11\%$. We do not match the deep
 baselines. Because the working context is a single vector, we can
 directly inspect its geometry: a persistent default-token direction,
 a content-bearing horizon of tens of tokens, and memory heads that
@@ -57,29 +57,27 @@ RWKV, and xLSTM hold a per-layer matrix state. Both computation and
 memory are distributed across the stack: every layer keeps its own
 copy of ``what the model knows so far.''
 
-Biological networks look different. Cortex is wide and shallow, with
-depth coming from revisiting the same circuitry across time rather
-than from stacking new circuits on top. We ask whether the same
-shape is viable for language modeling: how far can a single shallow
-recurrent layer go?
+Biological networks lean heavily on recurrence rather than on
+stacking, with depth coming from revisiting the same circuitry
+across time. We ask whether the same shape is viable for language
+modeling: how far can a single shallow recurrent layer go?
 
 A Grounded Prediction Network (GPN) is our answer. One state vector,
 one FFN, one shared matrix memory --- revisited at every step. Each
 step grounds the previous state with the observed token, predicts
 the next state via the FFN and a read from the matrix memory, and
 decodes the next-token distribution. There is no stack; depth comes
-from time. The mechanism that keeps the shallow layer coherent across
-so many revisits is grounded prediction (\S\ref{sec:gp}).
+from time. We call this loop \emph{grounded prediction} and unpack it
+in \S\ref{sec:gp}.
 
 At 130M parameters, a 1-layer GPN+M reaches FineWeb-Edu perplexity
 $18.06$, within $13\%/18\%$ of a 12-layer Transformer++ ($16.05$)
 and a 10-layer GDN ($15.34$); a 2-layer variant closes the gap to
-$6\%/11\%$. The shallow model does not match deep baselines, but the
-gap is much smaller than the $\sim 10\times$ depth difference would
-predict. And because the entire state is one vector, we can observe
-what the trained model puts there: a persistent default-token
-direction, a content-bearing horizon of tens of tokens, and memory
-heads that split into fast and slow retention pools.
+$6\%/11\%$. The shallow model does not match the deep baselines. And
+because the entire state is one vector, we can observe what the
+trained model puts there: a persistent default-token direction, a
+content-bearing horizon of tens of tokens, and memory heads that
+split into fast and slow retention pools.
 
 \paragraph{Contributions.}
 \begin{enumerate}
@@ -93,8 +91,7 @@ a single vector plays both roles, with grounding completing the
 encoding (\S\ref{sec:gp}).
 \item \textbf{Evidence.} At 130M parameters, a 1-layer GPN+M is
 within $13\%/18\%$ FineWeb-Edu PPL of a 12-layer Transformer++ and
-a 10-layer GDN --- much closer than the depth difference would
-predict; a 2-layer variant closes the gap to $6\%/11\%$
+a 10-layer GDN; a 2-layer variant closes the gap to $6\%/11\%$
 (\S\ref{sec:results}).
 \item \textbf{Observability.} A persistent default-token direction,
 a tens-of-token content horizon, and a spontaneous fast/slow memory
